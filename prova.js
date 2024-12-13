@@ -1,0 +1,1 @@
+var pippo=10;
