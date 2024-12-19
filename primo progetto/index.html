@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+    <html lang="it">
+        <head>
+            <meta charset ="utf-8">
+            <title>Suore Online</title>
+            <link rel="stylesheet" type=text/css href="styles.css">
+        </head>
+    <body>
+        <header>
+                <h2>Suore Online</h2>
+                <img src="https://falpala.it/wp-content/uploads/2013/08/suora2.jpg" alt="Suore" width=785 height=300> 
+               <nav>
+               <ul class="menu">
+                   <li><a href="#Prega con noi">Preghiera</a>
+                      <ul class="submenu">
+                      <li>Preghiamo</li>
+                      <li>Ascoltiamo il Signore</li>
+                      <li>Santa Messa</li>
+                      </ul>
+                   </li>
+                   <li><a href="#Pentiti">Pentimento</a>
+                       <ul class="submenu">
+                           <li>Perdona te stesso</li>
+                      </ul>
+                   </li>
+                   <li><a href="#Confessati">Confessione</a>
+                       <ul class="submenu">
+                         <li>Riconosci i tuoi peccati</li>
+                         <li>Segui i comandamenti</li>
+                      </ul>
+                   </li>
+               </ul>
+               </nav><br>
+        </header>
+            <section>  
+                <div id="Prega con noi">
+                    <h2>Prega con noi</h2>
+                    <iframe width="200" height="100" src="https://radiomaria.it/">
+                     </iframe>
+                        <p>Lascia fluire la parola del Signore dentro di te. Partecipa al Santo rosario live delle ore 16.</p>
+                </div>
+                <div id="Pentiti">
+                    <h2>Pentiti</h2>
+                    <img src="https://www.crescita-personale.it/.imaging/default/dam/crescita-personale/articoli/spiritualita/psicologia-peccato.jpg/jcr:content.jpg" alt="Peccato" width=200 height=120>
+                        <p>Riconosci i tuoi peccati.</p>
+                </div>
+                <div id="Confessati">
+                     
+                    <h2>Confessati</h2>
+                    <iframe width="200" height="120" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                     </iframe>
+                        <p>Libera il tuo cuore e segui la tua strada.</p>
+                </div>    
+        </section>
+       
+       
+       <form id="mioform" action="unisciti a noi" method="post">
+        
+        <h2>Unisciti a noi</h2>
+       
+       <label for"nome">Nome:</label>
+       <input type="text" placeholder="Inserisci il tuo nome" id="nome" name="nome" required>
+       
+       <label for"cognome">Cognome:</label>
+       <input type="text" placeholder="Inserisci il tuo cognome" id="cognome" name="cognome" required>
+       
+       <label for"codice fiscale">Codice Fiscale:</label>
+       <input type="text"placeholder="Inserisci il tuo codice fiscale" id="codice fiscale" name:"codice fiscale" required>
+       
+       <label for"email">E-mail:</label>
+       <input type="email" placeholder="Inserisci la tua e-mail" id="email" name="email" required>
+       
+       <label for"telefono">Telefono:</label>
+       <input type="telefono" placeholder="Inserisci il tuo numero" id="telefono" name="telefono" required>
+       
+       <label for="messaggio">Messaggio:</label>
+       <textarea id="messaggio" placeholder="Inserisci un messaggio" name="messaggio" rows="10" cols="100" required></textarea>
+       
+       <input id="unisciti" type="submit" onclick="primafunzione()" value="Unisciti alla nostra Mission"/>
+        
+        </form>
+     <button id="changeColor">Cambia Colore</button>
+        
+        <footer>
+        <button onclick="secondafunzione()">Contattaci</button>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+    </html>

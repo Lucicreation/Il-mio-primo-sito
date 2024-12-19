@@ -1,0 +1,132 @@
+body {
+    background-color:white;
+}
+img {
+  border-radius: 4px;
+}
+iframe {
+  border-radius: 4px;
+}
+h2 {
+    background-color:#333;
+    font-family: times new roman;
+    color:white;
+    text-align: center;
+    border-radius: 4px;
+    padding:8px;
+}
+p {
+    color:black;
+    text-align:center;
+}
+section { display:flex;
+         justify-content:space-evenly;
+}
+
+div {
+     display:flex;
+     float:left;
+     display: inline-block;
+     width: 280px;
+     height: 280px;
+     box-sizing:border-box;
+     border: 2px solid #333;
+     border-radius: 4px;
+     background-color:white;
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     justify-content:center;
+     
+}
+nav {
+  background-color: #333;
+   border-radius: 4px;
+}
+.menu {
+    list-style:none;
+    display: flex;
+    justify-content:left;
+    margin: 0;
+    padding:0;
+}
+.menu > li {
+  position: relative;
+}
+.menu > li > a {
+   display: block;
+   color: white;
+   text-decoration: none;
+   padding: 10px 20px;
+}
+.menu > li > a:hover {
+  background-color:grey;
+}
+.submenu {
+  display:none;
+  list-style: none;
+  position: absolute;
+  background-color: lightgrey;
+}
+.submenu li a {
+  display: block;
+  color: blue;
+  text-decoration: none;
+}
+.submenu li a:hover {
+  background-color: #111;
+}
+.menu li:hover .submenu {
+  display: block;
+}
+.section form {
+  margin-top: 10px;
+}
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #333;
+  border-radius: 4px;
+}
+input[type=telefono] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #333;
+  border-radius: 4px;
+}
+input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #333;
+  border-radius: 4px;
+}
+textarea[id=messaggio] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #333;
+  border-radius: 4px;
+}
+input[type=submit] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #333;
+  border-radius: 4px;
+}
+button {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #333;
+  border-radius: 4px;
+}    
