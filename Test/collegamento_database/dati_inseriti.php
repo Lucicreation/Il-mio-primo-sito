@@ -1,3 +1,11 @@
+<?php
+// Parametri di connessione
+$host = 'localhost';
+$username = 'root';
+$password = '';
+$dbname = 'dati_utenti';
+$table = 'utenti';
+
 // Crea la connessione
 $conn = new mysqli($host, $username, $password, $dbname);
 
