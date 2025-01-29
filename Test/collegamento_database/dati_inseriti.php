@@ -1,11 +1,3 @@
-<?php
-// Parametri di connessione
-$host = 'localhost';
-$username = 'root';
-$password = '';
-$dbname = 'dati_utenti';
-$table = 'utenti';
-
 // Crea la connessione
 $conn = new mysqli($host, $username, $password, $dbname);
 
@@ -31,7 +23,24 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         echo "Errore: " . $conn->error;
     }
 }
+?>
 
+<!-- Form per l'inserimento dei dati -->
+<h2>Inserisci i dati</h2>
+<form method="post" action="">
+    <label for="nome">Nome:</label>
+    <input type="text" name="nome" required><br><br>
+
+    <label for="cognome">Cognome:</label>
+    <input type="text" name="cognome" required><br><br>
+
+    <label for="codice_fiscale">Codice Fiscale:</label>
+    <input type="text" name="codice_fiscale" required><br><br>
+
+    <input type="submit" value="Inserisci">
+</form>
+
+<?php
 // Visualizza i dati della tabella
 $sql = "SELECT * FROM $table";
 $result = $conn->query($sql);
