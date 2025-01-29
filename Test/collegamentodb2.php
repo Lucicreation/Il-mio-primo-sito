@@ -32,6 +32,21 @@ if ($result->num_rows > 0) {
     echo "Nessuna tabella trovata.";
 }
 
+// Esegui la query per ottenere la struttura della tabella
+$sql = "DESCRIBE $table";
+$result = $conn->query($sql);
+
+// Verifica se la tabella esiste
+if ($result->num_rows > 0) {
+    // Stampa la struttura della tabella
+    echo "Struttura della tabella '$table':<br>";
+    while($row = $result->fetch_assoc()) {
+        echo "Colonna: " . $row["Field"] . " - Tipo: " . $row["Type"] . "<br>";
+    }
+} else {
+    echo "Tabella non trovata.";
+}
+
 // Esegui la query per ottenere i dati dalla tabella
 $sql = "SELECT * FROM $table";
 $result = $conn->query($sql);
@@ -41,13 +56,11 @@ if ($result->num_rows > 0) {
     echo "Dati nella tabella '$table':<br>";
     // Stampa i dati
     while($row = $result->fetch_assoc()) {
-        echo  " - Nome: " . $row["Nome"] . " - Cognome: " . $row["Cognome"] . " - Codice Fiscale: " . $row["Codice_fiscale"] . "<br>";
+        echo "ID: " . $row["ID"] . " - Nome: " . $row["Nome"] . " - Cognome: " . $row["Cognome"] . " - Codice Fiscale: " . $row["Codice_fiscale"] . "<br>";
     }
 } else {
     echo "Nessun dato trovato nella tabella.<br>";
 }
-
-
 
 // Chiudi la connessione
 $conn->close();
